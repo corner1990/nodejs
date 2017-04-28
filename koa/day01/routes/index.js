@@ -157,7 +157,7 @@ router.get('/', async function (ctx, next) {
 	    })
 	}
 
-	// getByPager();
+	//getByPager();
 	await ctx.render('liuyan',{title:'liuyan post' })
 
 })

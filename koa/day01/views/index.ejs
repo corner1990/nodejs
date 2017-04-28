@@ -1,0 +1,181 @@
+
+<%- include header %>
+    <body>                     
+        <!-- Content -->
+        <div class="cd-hero">
+
+            <!-- Navigation -->        
+            <div class="cd-slider-nav">
+                <nav class="navbar">
+
+                    <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                        &#9776;
+                    </button>
+                    <div class="collapse navbar-toggleable-sm text-xs-center text-uppercase tm-navbar" id="tmNavbar">
+                        <ul class="nav navbar-nav">
+                            <% for (var i=0;i<navList.length;i++) {%>
+                                <% if(i == 0){%>
+                                 <li class="nav-item active selected">
+                                    <a class="nav-link" href="#0" data-no="<%= i +1 %>"><%= navList[i] %><span class="sr-only">(current)</span></a>
+                                </li>
+                                <% } else {%>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="<%= i+1 %>"><%= navList[i] %></a>
+                                </li>
+                                <% }%>
+                            <% } %>
+                        </ul>
+                    </div>
+                </nav>
+            </div> 
+
+            <ul class="cd-hero-slider">  <!-- autoplay -->
+                <li class="selected">
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content tm-page-1" data-page-no="1">
+                            
+                            <div class="row">
+                            
+                                <div class="col-xs-12">
+                                    <i class="fa fa-4x fa-camera tm-icon"></i>
+                                    <h2 class="tm-site-name">平凡的世界</h2>
+                                    <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-1-col">
+                                        <p class="tm-text">我认为，每个人都有一个觉醒期，但觉醒的早晚决定个人的命运。</p>
+                                        <p class="tm-text">在这个世界上，不是所有合理的和美好的都能按照自己的愿望存在或实现。</p>
+                                        <p class="tm-text">既不懈的追求生活，又不敢奢望生活过多的报酬和宠爱，而是理智而清醒的面对着现实。</p>
+                                        <p class="tm-text">既要脚踏实地于现实生活，又要不时跳出现实到理想的高台上张望一眼。在精神世界里建立起一套丰满的体系，引领我们不迷失不懈怠。待我们一觉醒来，跌落在现实中的时候，可以毫无怨言地勇敢地承担起生活重担。这是孙少平教给我的道理。 只能永远把艰辛的劳动看做生命的必要，即使没有收获的指望，也心平气静地继续耕种。要做到这一点，路还好长。</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div> <!-- .cd-full-width -->
+                </li>
+
+                <li>
+                    <div class="cd-full-width">
+
+                        <div class="container-fluid js-tm-page-content" data-page-no="2">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="tm-2-col-container">
+                            
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox">
+                                            <h2 class="tm-text-title">摆渡人</h2>
+                                            <p class="tm-text">我用最合适的相貌出现在每个灵魂面前。在遇到下一个灵魂之前，我一直保持这样的相貌。我不知道自己遇到第一个灵魂之前是什么模样。如果我真的存在，我的存在也是因为有你们的需要。</p>
+                                            <p class="tm-text">当我们直面生存、死亡与爱，哪一个会是最终的选择？</p>
+                                        </div>
+
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox">
+                                            <h2 class="tm-text-title">我既是旁观者清亦是当局者迷。</h2>
+                                            <p class="tm-text">所有的光鲜靓丽都敌不过时间，并且一去不复返。.</p>
+                                            <p class="tm-text">可是我一面心里想，我们这排灯火辉煌的窗户高高在这都市之上，从底下暮色苍茫的街道望上来，不知道蕴藏着何等人生的秘密，而我脑海中也见到这么一位过客，偶尔路过此地，抬头望望，不知所以。我自己似乎又在里边又在外边，对这幕人生悲喜剧无穷的演变，又是陶醉又是恶心。</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                
+                    </div> <!-- .cd-full-width -->
+
+                </li>
+                
+                <!-- Page 3 -->
+                <li>
+                    
+                    <div class="cd-full-width">
+
+                        <div class="container-fluid js-tm-page-content" data-page-no="3">
+                            
+                            <div class="row tm-img-gallery">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="images/tm-img-01.jpg">
+                                        <img src="images/tm-img-01-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="images/tm-img-02.jpg">
+                                        <img src="images/tm-img-02-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="images/tm-img-03.jpg">
+                                        <img src="images/tm-img-03-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="images/tm-img-04.jpg">
+                                        <img src="images/tm-img-04-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="images/tm-img-05.jpg">
+                                        <img src="images/tm-img-05-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                    <a href="images/tm-img-06.jpg">
+                                        <img src="images/tm-img-06-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                    </a>
+                                </div>                                
+                            </div>
+
+                        </div>
+                                                    
+                    </div>
+                    
+                </li>
+
+                <li>
+                    <div class="cd-full-width">
+
+                        <div class="container-fluid js-tm-page-content" data-page-no="4">
+                            
+                            <div class="tm-contact-page">
+                                
+                                <div class="row">
+
+                                    <div class="col-xs-12">
+                                        
+                                        <h2 class="tm-section-title">如果你愿意</h2>
+                                        <p class="tm-text tm-font-w-400 m-b-3">无论你在寂寞无人的山野，还是在古老静谧的村口，无论你在华灯初上的城市，还是灯火阑珊的街头，我们都是这尘世的过客，如果你看到一个孤独疲惫的旅客<br/>请你照顾一下他,并通知我他是我迷路的兄弟.</p>
+                                    </div>
+
+                                </div>
+
+                                <!-- contact form -->
+                                <div class="row">
+                                    <form action="/liuyan" method="post" class="tm-contact-form">
+                                    
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                            <div class="form-group">
+                                                <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="字、号"  required/>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="邮箱"  required/>
+                                            </div> 
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                            <div class="form-group">
+                                                <textarea id="contact_message" name="contact_message" class="form-control" rows="5" placeholder="你有话说么？" required></textarea>
+                                            </div>    
+                                        </div>
+
+                                        <div class="col-xs-12">
+                                            <button type="submit" class="pull-xs-right tm-submit-btn">你随意点</button>
+                                        </div>
+                                    </form>  
+                                </div>
+
+                            </div>    
+
+                        </div>
+                        
+                    </div> <!-- .cd-full-width -->
+                </li>
+            </ul> <!-- .cd-hero-slider -->
+        </div> 
+<%- include footer %>

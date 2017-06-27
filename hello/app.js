@@ -1,13 +1,17 @@
 
-const express = require('express');
+const http = require('http')
+const cheerio = require('che')
 
-let  app = express();
+http.createServer(function (req, res) {
+	res.writeHead(200, {'Content-Type': 'text/plan'}
 
-app.get('/',(reg,res)=>{
-	res.send('Hello World!');
+      res.write(items);
+    });
+	// res.write('hello Nodejs')
+
+	res.end()
+
+	console.log('start sever')
 })
+.listen(5000)
 
-
-let  server = app.listen(8081,()=>{
-	console.dir(server)
-})
